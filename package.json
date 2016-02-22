@@ -1,0 +1,29 @@
+{
+  "name": "bamba",
+  "version": "0.0.1",
+  "description": "bamba",
+  "main": "index.js",
+  "dependencies": {
+    "hjs-webpack": "^7.2.1",
+    "lodash": "^4.5.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-speech": "^0.3.1",
+    "tone": "^0.6.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.0"
+  },
+  "scripts": {
+    "start": "hjs-dev-server",
+    "build": "webpack",
+    "deploy": "npm run build && surge -p public -d somedomain.com"
+  },
+  "author": "Adrian le Bas",
+  "license": "MIT"
+}
